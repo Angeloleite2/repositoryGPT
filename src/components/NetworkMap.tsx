@@ -27,9 +27,14 @@ import "mapbox-gl/dist/mapbox-gl.css";
 
 const ORANGE = "#E8721C";
 
-// Set VITE_MAPBOX_TOKEN locally or in the hosting provider's environment.
-// The static map remains available when no token is configured.
-const MAPBOX_TOKEN = import.meta.env.VITE_MAPBOX_TOKEN as string | undefined;
+// Hosting providers can override this with VITE_MAPBOX_TOKEN. The fallback is
+// a public Mapbox browser token restricted to the PTP production domains.
+const FALLBACK_PUBLIC_TOKEN =
+  "pk.eyJ1IjoiYW5nZWxvZzJjIiwiYSI6ImNtc3FtdzJyYTA4ejkyeHEzMHBzMnZkZ3YifQ.D6eP-oQlrixtEz2BLTXqwA";
+
+const MAPBOX_TOKEN =
+  (import.meta.env.VITE_MAPBOX_TOKEN as string | undefined) ||
+  FALLBACK_PUBLIC_TOKEN;
 
 /** ISO codes of the countries where PTP operates (static fallback highlight). */
 const PTP_ISO = ["AR", "BR", "PY", "UY", "ES", "NL"];
