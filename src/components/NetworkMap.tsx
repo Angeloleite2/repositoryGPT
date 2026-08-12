@@ -27,10 +27,10 @@ import "mapbox-gl/dist/mapbox-gl.css";
 
 const ORANGE = "#E8721C";
 
-// Hosting providers can override this with VITE_MAPBOX_TOKEN. The fallback is
-// a public Mapbox browser token restricted to the PTP production domains.
+// Hosting providers can override this with VITE_MAPBOX_TOKEN. This fallback is
+// a public browser token used for the current deployment test.
 const FALLBACK_PUBLIC_TOKEN =
-  "pk.eyJ1IjoiYW5nZWxvZzJjIiwiYSI6ImNtc3FtdzJyYTA4ejkyeHEzMHBzMnZkZ3YifQ.D6eP-oQlrixtEz2BLTXqwA";
+  "pk.eyJ1IjoiYW5nZWxvZzJjIiwiYSI6ImNtc2ZobjZlbjA0ZGIzM3EyejY5eGdudGoifQ.ZEWwE1Jzr_jw02hgXLgdQw";
 
 const MAPBOX_TOKEN =
   (import.meta.env.VITE_MAPBOX_TOKEN as string | undefined) ||
