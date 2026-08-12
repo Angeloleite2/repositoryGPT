@@ -1,0 +1,26 @@
+// Shared coordinates per port slug (used by the 3D globe and the satellite map).
+export const portCoords: Record<string, { lat: number; lng: number }> = {
+  "san-nicolas": { lat: -33.35141, lng: -60.17493 },
+  "ramallo-storage": { lat: -33.44504, lng: -60.0794 },
+  "ramallo-terminal": { lat: -33.451653952742575, lng: -60.0422738191098 },
+  "pgsm-transshipment": { lat: -32.63449607870084, lng: -60.74941635269821 },
+  "pgsm-storage": { lat: -32.67185, lng: -60.76769 },
+  "villa-constitucion-port": { lat: -33.24312, lng: -60.30017 },
+  "villa-constitucion-storage": { lat: -33.24825281251367, lng: -60.3069284761499 },
+  ibicuy: { lat: -33.75614387269226, lng: -59.178999907813306 },
+  "concepcion-del-uruguay": { lat: -32.48536002929736, lng: -58.221574037367596 },
+  lima: { lat: -33.9698, lng: -59.17711 },
+  montevideo: { lat: -34.90206780647403, lng: -56.20850065878492 },
+  "juanico-storage": { lat: -34.59538734798198, lng: -56.254546528613375 },
+  // The client supplied one Juanicó coordinate for both brochure entries.
+  "juanico-storage-project": { lat: -34.59538734798198, lng: -56.254546528613375 },
+  "nueva-palmira-port": { lat: -33.88358889781733, lng: -58.421764980988094 },
+  "nueva-palmira-storage": { lat: -33.8885, lng: -58.40245 },
+  "punta-del-arenal": { lat: -33.68108, lng: -58.43819 },
+  villeta: { lat: -25.50690987149639, lng: -57.57417017304411 },
+  "porto-murtinho": { lat: -21.705137, lng: -57.894998 },
+  "cadiz-port": { lat: 36.52290282790395, lng: -6.254122005246095 },
+  "cadiz-drybulk": { lat: 36.52415242953106, lng: -6.240871326321433 },
+  tarragona: { lat: 41.095212100486705, lng: 1.2145886921575717 },
+  rotterdam: { lat: 51.949882226589324, lng: 4.152358539037946 },
+};

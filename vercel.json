@@ -1,0 +1,10 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "buildCommand": "bun run build:vercel",
+  "outputDirectory": "dist-spa",
+  "installCommand": "bun install",
+  "framework": null,
+  "rewrites": [
+    { "source": "/((?!images/|downloads/|geo/|textures/|hero-|placeholder\\.svg|robots\\.txt|favicon\\.ico).*)", "destination": "/index.html" }
+  ]
+}

@@ -1,0 +1,1 @@
+DELETE FROM public.contact_messages WHERE email IN ('qa@example.com','qa-final@example.com');
